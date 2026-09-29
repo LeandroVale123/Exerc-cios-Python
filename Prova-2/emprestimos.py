@@ -1,4 +1,3 @@
-# emprestimos.py
 # Módulo responsável pelo gerenciamento dos empréstimos e devoluções
 
 from datetime import date, timedelta

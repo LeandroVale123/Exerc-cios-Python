@@ -1,4 +1,3 @@
-# alunos.py
 # Módulo responsável pelo gerenciamento de alunos
 
 def cadastrar_aluno(alunos):
@@ -17,7 +16,7 @@ def cadastrar_aluno(alunos):
             print("Erro: A matrícula deve ser informada corretamente!")
             break
 
-        # Verifica duplicidade de matrícula
+        # Verifica se já existe uma matrícula cadastrada
         matricula_existente = any(a["matricula"] == matricula for a in alunos)
         if matricula_existente:
             print("Erro: Já existe um aluno cadastrado com esta matrícula!")
@@ -37,7 +36,7 @@ def cadastrar_aluno(alunos):
             "matricula": matricula,
             "nome": nome,
             "turma": turma,
-            "bloqueado_ate": None  # Armazena a data limite de bloqueio caso entregue com atraso
+            "bloqueado_ate": None  # bloqueio por atraso
         }
         alunos.append(aluno_novo)
         print("Aluno cadastrado com sucesso!")

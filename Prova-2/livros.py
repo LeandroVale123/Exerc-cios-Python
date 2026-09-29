@@ -1,4 +1,3 @@
-# livros.py
 # Módulo responsável pelo gerenciamento de livros (CRUD)
 
 def cadastrar_livro(livros):

@@ -1,4 +1,3 @@
-# main.py
 # Arquivo principal que gerencia o menu geral e chama as funções dos módulos
 
 from livros import cadastrar_livro, listar_livros, pesquisar_livro, alterar_livro, excluir_livro
